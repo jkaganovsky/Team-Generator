@@ -10,9 +10,118 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+const employeeList = [];
 
 // Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
+inquirer
+    .prompt([
+        {
+            type: 'input',
+            message: 'What is your name?',
+            name: 'name',
+        },
+        {
+            type: 'input',
+            message: 'What is your employee ID?',
+            name: 'id',
+        },
+        {
+            type: 'input',
+            message: 'What is your e-mail?',
+            name: 'email',
+        },
+        {
+            name: 'role',
+            type: 'list',
+            message: 'What is your role?',
+            choices: [
+                    "Manager",
+                    "Engineer",
+                    "Intern",
+                    ],
+        },
+    ])
+    .then((response) => {
+        if(response.role === "Manager") {
+            renderManager(response);
+        }
+        else if(response.role === "Engineer") {
+            renderEngineer(response);
+        }
+        else if(response.role === "Intern") {
+            renderIntern(response);
+        }
+    });
+
+function renderManager(response) {
+    return inquirer
+        .prompt([
+            {
+                name: "number",
+                message: "What is your office number?",
+                type: 'input',
+            }
+        ])
+        .then((managerData) => {
+            const manager = new Manager(response.name, response.id, response.email, managerData.number);
+
+            employeeList.push(manager);
+
+            console.log(employeeList);
+            })
+};
+
+function renderEngineer(response) {
+    return inquirer
+        .prompt([
+            {
+                name: "github",
+                message: "What is your github username?",
+                type: 'input',
+            }
+        ])
+        .then((engineerData) => {
+            const engineer = new Engineer(response.name, response.id, response.email, engineerData.github);
+
+            employeeList.push(engineer);
+
+            console.log(employeeList);
+            })
+};
+
+function renderIntern(response) {
+    return inquirer
+        .prompt([
+            {
+                name: "school",
+                message: "What school do you go to?",
+                type: 'input',
+            }
+        ])
+        .then((internData) => {
+            const intern = new Intern(response.name, response.id, response.email, internData.school);
+
+            employeeList.push(intern);
+
+            console.log(employeeList);
+            })
+};
+
+
+
+    // and to create objects for each team member (using the correct classes as blueprints!)
+//     const manager = new Manager(
+//         "Karen",
+//         101,
+//         "karen@test.com",
+//         "206-123-4567",
+//         )
+//         manager.getRole();
+//         console.log(manager.getRole());
+
+
+// })
+
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
