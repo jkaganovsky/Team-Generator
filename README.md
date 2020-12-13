@@ -19,9 +19,9 @@ Creating a command-line application that dynamically generates an html file cont
 ## Content
 * DEMO
 
-    ![HTML gif](./Assets/images/HTML.gif)
+    ![HTML gif](./Assets/images/team_generator.gif)
 
-    [HTML Preview Link](    )
+    [HTML Preview Link](https://drive.google.com/file/d/1NUxXeaMoQaHBlKZgxG6sbn_kH2heUSHe/view)
 
 * SCREENSHOTS
 
