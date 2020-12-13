@@ -58,6 +58,7 @@ function generateUser() {
 
 generateUser();
 
+// Generate questions when a new team member is added
 function EmployeeChoice() {
     return inquirer
         .prompt([
