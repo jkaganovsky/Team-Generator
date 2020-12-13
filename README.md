@@ -19,7 +19,7 @@ Creating a command-line application that dynamically generates an html file cont
 ## Content
 * DEMO
 
-    ![HTML gif](./assets/images/HTML.gif)
+    ![HTML gif](./Assets/images/HTML.gif)
 
     [HTML Preview Link](    )
 
@@ -27,35 +27,35 @@ Creating a command-line application that dynamically generates an html file cont
 
     - app.js
 
-    ![const.js](./assets/images/app_const.js.png)
+    ![const.js](./Assets/images/app_const.js.png)
 
-    ![user.js](./assets/images/app_user.js.png)
+    ![user.js](./Assets/images/app_user.js.png)
 
-    ![add.js](./assets/images/app_add.js.png)
+    ![add.js](./Assets/images/app_add.js.png)
 
-    ![employee.js](./assets/images/app_employee.js.png)
+    ![employee.js](./Assets/images/app_employee.js.png)
 
-    ![file.js](./assets/images/app_file.js.png)
+    ![file.js](./Assets/images/app_file.js.png)
 
 
     - employee.js
 
-    ![employee.js](./assets/images/employee.js.png)
+    ![employee.js](./Assets/images/employee.js.png)
 
 
     - engineer.js
 
-    ![engineer.js](./assets/images/engineer.js.png)
+    ![engineer.js](./Assets/images/engineer.js.png)
 
 
     - intern.js
 
-    ![intern.js](./assets/images/intern.js.png)
+    ![intern.js](./Assets/images/intern.js.png)
 
 
     - manager.js
 
-    ![manager.js](./assets/images/manager.js.png)
+    ![manager.js](./Assets/images/manager.js.png)
 
 ## Credits
 1. My Trilogy Education Tutor, Jacob Carver - https://www.linkedin.com/in/jacob-carver-software-developer125b81191/
