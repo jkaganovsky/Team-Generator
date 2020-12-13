@@ -71,10 +71,10 @@ function EmployeeChoice() {
             if (response.addTeam) {
                 generateUser();
             }
-            // else {
-            //     createHtmlFile();
-            //     return;
-            // }
+            else {
+                createHtmlFile();
+                return;
+            }
         });
 }
 
@@ -141,9 +141,9 @@ function renderIntern(response) {
             })
 };
 
-// function createHtmlFile(employeeList) {
-//     const htmlContent = render(employeeList);
+function createHtmlFile() {
+    const htmlContent = render(employeeList);
 
-//     fs.writeFile( outputPath, htmlContent, (err) =>
-//     err ? console.error("Failed to create a HTML file.") : console.error("New HTML file created!") );
-// };
+    fs.writeFile( outputPath, htmlContent, (err) =>
+    err ? console.error("Failed to create a HTML file.") : console.error("New HTML file created!") );
+};
